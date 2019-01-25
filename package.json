@@ -1,0 +1,25 @@
+{
+	"name": "rest-base-app",
+	"version": "1.0.0",
+	"main": "app.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "nodemon app.js",
+		"all": "concurrently \"npm run server\" \"npm run client\"",
+		"server": "nodemon app.js",
+		"client": "npm start --prefix ../client"
+	},
+	"dependencies": {
+		"bcrypt": "^3.0.3",
+		"body-parser": "^1.18.3",
+		"express": "^4.16.4",
+		"express-validator": "^5.3.1",
+		"jsonwebtoken": "^8.4.0",
+		"mongoose": "^5.4.6",
+		"multer": "^1.4.1"
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"nodemon": "^1.18.9"
+	}
+}
